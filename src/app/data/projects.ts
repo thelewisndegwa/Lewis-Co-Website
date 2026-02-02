@@ -8,6 +8,12 @@ export interface Project {
   
   export const projects: Project[] = [
     {
+      title: 'Biashara Assistant',
+      description: 'Your Smart WhatsApp Assistant for Business. Biashara-Assistant helps Kenyan businesses automate customer service, handle bookings, and accept M-Pesa payments directly through WhatsApp. Built for salons, restaurants, service providers, and retail shops to save time and never miss a customer.',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg',
+      link: 'https://thelewisndegwa.github.io/biashara-assistant-site/',
+    },
+    {
       title: 'Landlord-Tenant Management App',
       description: 'A robust solution designed to simplify property management for landlords and enhance the renting experience for tenants. The app offers tools for lease agreements, payment tracking, maintenance requests, and communication between tenants and landlords.',
       image: '/assets/project.png',
@@ -37,13 +43,5 @@ export interface Project {
       image: '/assets/pceamakupaparish.svg',
       link: 'https://pceamakupaparish.org/', // Replace with your live project URL
     },
-    {
-      title: 'Biashara Assistant',
-      description: 'Your Smart WhatsApp Assistant for Business. Biashara-Assistant helps Kenyan businesses automate customer service, handle bookings, and accept M-Pesa payments directly through WhatsApp. Built for salons, restaurants, service providers, and retail shops to save time and never miss a customer.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg',
-      link: 'https://thelewisndegwa.github.io/biashara-assistant-site/',
-    } 
-        
- 
   ];
   
