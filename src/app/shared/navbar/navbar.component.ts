@@ -83,9 +83,4 @@ export class NavbarComponent {
     window.scrollTo(0, 0); // Scroll to the top of the page
   }
 
-  navigateToBlog() {
-    this.router.navigate(['blog']);
-    this.closeSidebar();
-    window.scrollTo(0, 0); // Scroll to the top of the page
-  }
 }
