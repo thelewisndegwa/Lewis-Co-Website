@@ -14,16 +14,16 @@ export interface Project {
       link: 'https://biashara.business/',
     },
     {
+      title: 'Landlord-Tenant Management App',
+      description: 'A robust solution designed to simplify property management for landlords and enhance the renting experience for tenants. The app offers tools for lease agreements, payment tracking, maintenance requests, and communication between tenants and landlords.',
+      image: '/assets/project.png',
+      link: 'https://cityrealtykenya.com/',
+    },
+    {
       title: 'Topnotch Books',
       description: 'KCSE revision made simple, visual, and deeply memorable. Topnotch Books is an e-commerce store built around the Octopus Revision Method—turning dense past papers into clear, visual study paths. Students get structured, exam-aligned practice with featured titles, educational videos, and a blog for revision tips and study strategies.',
       image: '/assets/topnotch.png',
       link: 'https://topnotch-ecom-store.vercel.app/',
-    },
-    {
-      title: 'Landlord-Tenant Management App',
-      description: 'A robust solution designed to simplify property management for landlords and enhance the renting experience for tenants. The app offers tools for lease agreements, payment tracking, maintenance requests, and communication between tenants and landlords.',
-      image: '/assets/project.png',
-      link: 'https://cityrealtykenya.com/', // Replace with your live project URL
     },
     {
       title: 'Code Kenya',
