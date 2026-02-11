@@ -181,11 +181,46 @@
 
     <!-- Cards Container -->
     <div class="mt-10 grid gap-8 md:grid-cols-3">
-      <!-- Card: EX Tech -->
+      <!-- Card: EX AI Automation -->
       <article
         class="group flex flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-md transition hover:-translate-y-1 hover:border-red-400/70 hover:shadow-xl"
         data-aos="fade-up"
         data-aos-duration="1100"
+      >
+        <figure class="overflow-hidden rounded-xl">
+          <img
+            src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80"
+            alt="Two people shaking hands in front of a robot representing AI automation and collaboration"
+            class="h-44 w-full object-cover transition duration-700 group-hover:scale-105"
+            loading="lazy"
+          />
+        </figure>
+        <h3 class="mt-5 text-lg font-semibold text-gray-900">EX AI Automation</h3>
+        <p class="mt-3 text-sm text-gray-600">
+          End‑to‑end AI systems — chatbots, workflow engines, and smart
+          integrations — that run your operations around the clock across
+          every industry we serve.
+        </p>
+        <ul class="mt-4 space-y-1 text-xs text-gray-600">
+          <li>• AI chatbots &amp; virtual assistants on any channel</li>
+          <li>• Workflow orchestration &amp; data pipelines</li>
+          <li>• Smart outreach, follow‑up &amp; document processing</li>
+        </ul>
+        <button
+          type="button"
+          (click)="navigateToAutomation()"
+          class="mt-6 inline-flex items-center text-sm font-semibold text-red-600 hover:text-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-400/60"
+        >
+          Explore EX AI Automation
+          <span aria-hidden="true" class="ml-1">→</span>
+        </button>
+      </article>
+
+      <!-- Card: EX Tech -->
+      <article
+        class="group flex flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-md transition hover:-translate-y-1 hover:border-red-400/70 hover:shadow-xl"
+        data-aos="fade-up"
+        data-aos-duration="1300"
       >
         <figure class="overflow-hidden rounded-xl">
           <img
@@ -220,7 +255,7 @@
       <article
         class="group flex flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-md transition hover:-translate-y-1 hover:border-red-400/70 hover:shadow-xl"
         data-aos="fade-up"
-        data-aos-duration="1300"
+        data-aos-duration="1500"
       >
         <figure class="overflow-hidden rounded-xl">
           <img
@@ -246,40 +281,6 @@
           class="mt-6 inline-flex items-center text-sm font-semibold text-red-600 hover:text-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-400/60"
         >
           Explore EX Marketing
-          <span aria-hidden="true" class="ml-1">→</span>
-        </button>
-      </article>
-
-      <!-- Card: EX AI Automation -->
-      <article
-        class="group flex flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-md transition hover:-translate-y-1 hover:border-red-400/70 hover:shadow-xl"
-        data-aos="fade-up"
-        data-aos-duration="1500"
-      >
-        <figure class="overflow-hidden rounded-xl">
-          <img
-            src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80"
-            alt="Two people shaking hands in front of a robot representing AI automation and collaboration"
-            class="h-44 w-full object-cover transition duration-700 group-hover:scale-105"
-            loading="lazy"
-          />
-        </figure>
-        <h3 class="mt-5 text-lg font-semibold text-gray-900">EX AI Automation</h3>
-        <p class="mt-3 text-sm text-gray-600">
-          Reduce manual busywork with smart workflows that connect your tools,
-          trigger actions, and keep your team focused on high‑value work.
-        </p>
-        <ul class="mt-4 space-y-1 text-xs text-gray-600">
-          <li>• AI‑assisted customer support and operations</li>
-          <li>• Automated lead routing and follow‑up</li>
-          <li>• Internal tools and workflow orchestration</li>
-        </ul>
-        <button
-          type="button"
-          (click)="navigateToAutomation()"
-          class="mt-6 inline-flex items-center text-sm font-semibold text-red-600 hover:text-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-400/60"
-        >
-          Explore EX AI Automation
           <span aria-hidden="true" class="ml-1">→</span>
         </button>
       </article>

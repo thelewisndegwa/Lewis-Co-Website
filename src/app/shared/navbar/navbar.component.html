@@ -22,13 +22,13 @@
         <div *ngIf="dropdownOpen" class="absolute bg-white shadow-md rounded mt-2 w-48 dropdown-menu">
           <ul class="py-2 text-gray-700">
             <li>
+              <a (click)="navigateToAutomation()" class="block px-4 py-2 hover:bg-gray-100 text-black" (click)="closeDropdown()">A.I. Automation</a>
+            </li>
+            <li>
               <a (click)="navigateToTech()" class="block px-4 py-2 hover:bg-gray-100 text-black" (click)="closeDropdown()">Tech</a>
             </li>
             <li>
               <a (click)="navigateToMarketing()" class="block px-4 py-2 hover:bg-gray-100 text-black" (click)="closeDropdown()">Marketing</a>
-            </li>
-            <li>
-              <a (click)="navigateToAutomation()" class="block px-4 py-2 hover:bg-gray-100 text-black" (click)="closeDropdown()">A.I. Automation</a>
             </li>
           </ul>
         </div>
@@ -67,13 +67,13 @@
       <!-- Dropdown Menu for Mobile with animation -->
       <ul *ngIf="dropdownOpen" class="ml-4 space-y-2 dropdown-menu">
         <li>
+          <a (click)="navigateToAutomation(); closeDropdown(); closeSidebar()" class="text-black hover:text-red-600">A.I. Automation</a>
+        </li>
+        <li>
           <a (click)="navigateToTech(); closeDropdown(); closeSidebar()" class="text-black hover:text-red-600">Tech</a>
         </li>
         <li>
           <a (click)="navigateToMarketing(); closeDropdown(); closeSidebar()" class="text-black hover:text-red-600">Marketing</a>
-        </li>
-        <li>
-          <a (click)="navigateToAutomation(); closeDropdown(); closeSidebar()" class="text-black hover:text-red-600">A.I. Automation</a>
         </li>
       </ul>
     </li>
