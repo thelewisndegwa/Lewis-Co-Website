@@ -23,4 +23,9 @@ export class ProjectsComponent {
         });
       }
     }
+
+    navigateToContact() {
+      this.router.navigate(['contact']);
+      window.scrollTo(0, 0);
+    }
 }
