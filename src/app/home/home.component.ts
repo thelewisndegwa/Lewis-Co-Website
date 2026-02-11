@@ -18,9 +18,9 @@ export class HomeComponent {
 
   projects = projects.slice(0, 3);
   videos: any[] = [
-    { url: 'assets/videos/vid1.mp4' },
-    { url: 'assets/videos/vid2.mp4' },
-    { url: 'assets/videos/vid3.mp4' }
+    { url: 'assets/videos/vid1.mp4', playing: false },
+    { url: 'assets/videos/vid2.mp4', playing: false },
+    { url: 'assets/videos/vid3.mp4', playing: false }
   ];
 
   constructor(
@@ -34,6 +34,19 @@ export class HomeComponent {
         AOS.default.init(); 
       });
     }
+  }
+
+  playVideo(index: number): void {
+    if (isPlatformBrowser(this.platformId)) {
+      const videoEl = document.getElementById('home-video-' + index) as HTMLVideoElement;
+      if (videoEl) {
+        videoEl.play();
+      }
+    }
+  }
+
+  onVideoPlay(index: number): void {
+    this.videos[index].playing = true;
   }
 
   navigateToContact() {

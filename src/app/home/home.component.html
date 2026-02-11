@@ -386,18 +386,36 @@
       <div class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         <!-- Dynamically render videos -->
         <article
-          *ngFor="let video of videos"
-          class="relative h-0 overflow-hidden rounded-2xl border border-gray-200 bg-white pb-[56.25%] shadow-md"
+          *ngFor="let video of videos; let i = index"
+          class="group relative overflow-hidden rounded-2xl border border-gray-200 bg-gray-900 shadow-md cursor-pointer"
+          style="aspect-ratio: 16/9;"
+          (click)="playVideo(i)"
           data-aos="zoom-in"
           data-aos-duration="2000"
         >
           <video
-            class="absolute inset-0 h-full w-full rounded-2xl object-cover"
+            [id]="'home-video-' + i"
+            class="absolute inset-0 h-full w-full object-cover"
+            preload="metadata"
+            playsinline
             controls
+            (play)="onVideoPlay(i)"
           >
             <source [src]="video.url" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+
+          <!-- Play button overlay — visible until video starts -->
+          <div
+            *ngIf="!video.playing"
+            class="absolute inset-0 flex items-center justify-center bg-black/30 transition-opacity group-hover:bg-black/40"
+          >
+            <div class="flex h-16 w-16 items-center justify-center rounded-full bg-white/90 shadow-lg transition group-hover:scale-110">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-red-600 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+          </div>
         </article>
       </div>
     </div>
